@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!--=============== META ===============-->
+  <meta name="theme-color" content="#4285f4">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="./../img/favicon.png" type="image/x-icon">
+
+  <!--=============== BOXICONS ===============-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="./../css/swiper-bundle.min.css">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./../css/styles.css">
+
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+  <title>GHARA | Principal</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo" style="color:#6B9EEB">
+        GHARA
+      </a>
+
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class='bx bx-home-alt-2'></i>
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#popular" class="nav__link">
+              <i class='bx bx-building-house'></i>
+              <span>Inmuebles</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#value" class="nav__link">
+              <i class='bx bx-award'></i>
+              <span>Valor agregado</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <span>Contáctanos</span>
+              <i class='bx bx-phone'></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Theme change button -->
+      <i class="ri-user-3-line change-theme" onclick=" profile()"></i>
+      <a href="./views/login.html" class="nav__button button">Iniciar sesión</a>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== PROFILE MODAL ====================-->
+    <div id="profile__container" class="profile__container">
+      <div class="profile__card">
+        <div class="profile__card__border">
+          <img src="./../img/profile-img.png" alt="card image" class="profile__card__img">
+        </div>
+        <i style="color:  hsl(216,76%,67%);" class="ri-arrow-left-s-line exit-profile" onclick="profile()"
+          title="Volver"></i>
+        <h3 class="profile__card__name">Nathaly Escalona</h3>
+        <span class="profile__card__profession">20203tn159@utez.edu.mx</span>
+
+        <div class="profile__card__social" id="card-social">
+          <div class="profile__card__social-control">
+            <!-- Toggle button -->
+            <div class="profile__card__social-toggle" id="card-toggle">
+              <i class="ri-add-line"></i>
+            </div>
+
+            <span class="profile__card__social-text">Opciones</span>
+
+            <!-- Card social -->
+            <ul class="profile__card__social-list">
+
+              <a href="#" class="profile__card__social-link" title="Peticiones">
+                <i class="ri-mail-line"></i>
+              </a>
+
+              <a href="#" class="profile__card__social-link" title="Cambiar contraseña">
+                <i class="ri-key-2-fill"></i>
+              </a>
+
+              <a href="#" class="profile__card__social-link" title="Cerrar Sesión">
+                <i class="ri-logout-circle-r-line"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==================== PRICING ====================-->
+    <section class="section">
+      <div class="container">
+        <span class="section__subtitle">Consulta nuestras membresías</span>
+        <h2 class="section__title">
+          Los mejores precios<span>.</span>
+        </h2>
+
+        <div class="card___grid">
+          <div class="card___box PBasico">
+            <div class="card___title">Básico</div>
+            <div class="card___price">
+              <b>$30.99</b>
+              <span>Por mes</span>
+            </div>
+            <div class="card___features">
+              <div>Ofertas especiales</div>
+              <div>30% Más prestaciones</div>
+              <div>2 Ofertas VIP</div>
+              <div>20% Impuestos</div>
+            </div>
+            <div class="card___button">
+              <button>Contratar</button>
+            </div>
+          </div>
+
+          <div class="card___box PProfesional">
+            <div class="card___title">Profesional</div>
+            <div class="card___price">
+              <b>$60.99</b>
+              <span>Por mes</span>
+            </div>
+            <div class="card___features">
+              <div>Ofertas especiales</div>
+              <div>40% Más prestaciones</div>
+              <div>4 Ofertas VIP</div>
+              <div>10% Impuestos</div>
+            </div>
+            <div class="card___button">
+              <button>Contratar</button>
+            </div>
+          </div>
+
+
+          <div class="card___box PVIP">
+            <div class="card___title">VIP</div>
+            <div class="card___price">
+              <b>$90.99</b>
+              <span>Por mes</span>
+            </div>
+            <div class="card___features">
+              <div>Ofertas especiales</div>
+              <div>50% Más prestaciones</div>
+              <div>10 Ofertas VIP</div>
+              <div>5% Impuestos</div>
+            </div>
+            <div class="card___button">
+              <button>Contratar</button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div>
+          <a href="" class="footer__logo">
+            GHARA
+          </a>
+          <p class="footer__description">
+            Los mejores profesionales a tu servicio. <br>
+            Tu casa en buenas manos.
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <div>
+            <h3 class="footer__title">
+              Nosotros
+            </h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Sobre nosotros</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Características</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Noticias</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">
+              Empresa
+            </h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">¿Cómo trabajamos?</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Capital</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Seguridad</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">
+              Soporte
+            </h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Preguntas Frecuentes</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Centro de soporte</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">
+              Síguenos
+            </h3>
+
+            <ul class="footer__social">
+              <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                <i class='bx bxl-facebook-circle'></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                <i class='bx bxl-instagram-alt'></i>
+              </a>
+              <a href="https://www.pinterest.com/" target="_blank" class="footer__social-link">
+                <i class='bx bxl-pinterest'></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__info container">
+        <span class="footer__copy">
+          &#169; GHARA. Todos los derechos reservados.
+        </span>
+
+        <div class="footer__privacy">
+          <a href="#">Terminos & Condiciones</a>
+          <a href="#">Política de Privacidad</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class='bx bx-chevrons-up'></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./../js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./../js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./../js/main.js"></script>
+    <!--=============== ANIMATION JS ===============-->
+    <script src="./../js/animation.js"></script>
+</body>
+
+</html>

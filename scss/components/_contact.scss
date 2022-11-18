@@ -1,0 +1,83 @@
+/*=============== CONTACT ===============*/
+.contact{
+    &__container{
+        row-gap: 2rem;
+    }
+    &__images{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    &__orbe{
+        width: 266px;
+        height: 316px;
+        background-color: hsl(228, 24%, 97%);
+        border-radius: 135px 135px 16px 16px;
+    }
+    &__img{
+        position: absolute;
+        width: 250px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 125px 125px 12px 12px;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+    }
+    &__description{
+        font-size: var(--small-font-size);
+        margin-bottom: 2.5rem;
+    }
+    &__card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem .75rem;
+
+        &-box{
+            background-color: var(--body-color);
+            border: 2px solid var(--border-color);
+            padding: 1.25rem .75rem;
+            border-radius: .5rem;
+            transition: .3s;
+
+            &:hover{
+                box-shadow: 0 8px 24px hsla(228, 66%, 45%, .1);
+            }
+        }
+        &-info{
+            display: flex;
+            align-items: flex-start;
+            column-gap: .75rem;
+            margin-bottom: 1.25rem;
+        }
+        & i{
+            padding: 6px;
+            background-color: var(--first-color-lighten);
+            border-radius: 6px;
+            font-size: 1.25rem;
+            color: var(--first-color);
+        }
+        &-title{
+            font-size: var(--normal-font-size);
+        }
+        &-description{
+            font-size: var(--smaller-font-size);
+        }
+        &-button{
+            font-size: var(--small-font-size);
+            padding: 14px 0;
+            width: 100%;
+            border-radius: .25rem;
+            background: var(--first-color-lighten);
+            color: var(--first-color);
+            font-weight: var(--font-semi-bold);
+            box-shadow: none;
+
+            &:hover{
+                background-color: var(--first-color);
+                color: #fff;
+            }
+        }
+    }
+}

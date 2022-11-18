@@ -1,0 +1,496 @@
+/*=============== BASE ===============*/
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*=============== NOTIFICATIONS ===============*/
+.wrapper {
+    width: 380px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.example {
+    width: 380px;
+    bottom: 20px;
+    right: 0;
+    position: absolute;
+    z-index: 110;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-example {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width:380px) {
+    .wrapper {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.toast {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 1.3fr 6fr 0.5fr;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.success {
+    border-left: 8px solid #47d764;
+}
+
+.success i {
+    color: #47d764;
+}
+
+.container-1 i {
+    font-size: 35px;
+}
+
+.error {
+    border-left: 8px solid #ff355b;
+}
+
+.error i {
+    color: #ff355b;
+}
+
+.info {
+    border-left: 8px solid #2f86eb;
+}
+
+.info i {
+    color: #2f86eb;
+}
+
+.warning {
+    border-left: 8px solid #ffc021;
+}
+
+.warning i {
+    color: #ffc021;
+}
+
+.container-1,
+.container-2 {
+    align-self: center;
+}
+
+.container-2 p:first-child {
+    font-size: 16px;
+    color: #101020;
+    font-weight: 600;
+}
+
+.container-2 p:last-child {
+    font-size: 12px;
+    font-weight: 400;
+    color: #656565;
+}
+
+.toast button {
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    line-height: 0;
+    cursor: pointer;
+    color: #656565;
+}
+
+.toast:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+/*=============== PICKERS ===============*/
+
+input[type="time"] {
+    margin-bottom: 3rem;
+    background-color: #0080ff;
+    padding: 15px;
+    font-family: var(--body-font);
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5rem;
+    margin-bottom: 10px;
+}
+
+input[type="date"] {
+    margin-bottom: 3rem;
+    background-color: #0080ff;
+    padding: 15px;
+    font-family: var(--body-font);
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5rem;
+    margin-bottom: 10px;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3rem;
+}
+
+
+/*=============== BUTTONS ===============*/
+.button-primary {
+    display: inline-block;
+    background: linear-gradient(101deg,
+            hsl(218.08, 81%, 59%),
+            hsl(216, 76%, 67%));
+    color: #fff;
+    padding: 14px 28px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    box-shadow: 0 4px 8px hsla(228, 66%, 45%, .25);
+    transition: .3s;
+    cursor: pointer;
+    border: none;
+}
+
+.button-primary :hover {
+    box-shadow: 0 4px 12px hsla(228, 66%, 45%, .25);
+}
+
+.button-success {
+    display: inline-block;
+    background: linear-gradient(101deg,
+            rgb(33, 202, 75),
+            hsl(138, 88%, 32%));
+    color: #fff;
+    padding: 14px 28px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    box-shadow: 0 4px 8px rgba(74, 190, 39, 0.25);
+    transition: .3s;
+    cursor: pointer;
+    border: none;
+}
+
+.button-success :hover {
+    box-shadow: 0 4px 12px rgba(74, 190, 39, 0.25);
+}
+
+.button-warning {
+    display: inline-block;
+    background: linear-gradient(101deg,
+            rgb(196, 228, 18),
+            hsl(56, 76%, 46%));
+    color: #fff;
+    padding: 14px 28px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    box-shadow: 0 4px 8px rgba(175, 190, 39, 0.25);
+    transition: .3s;
+    cursor: pointer;
+    border: none;
+}
+
+.button-warning :hover {
+    box-shadow: 0 4px 12px rgba(175, 190, 39, 0.25);
+}
+
+.button-danger {
+    display: inline-block;
+    background: linear-gradient(101deg,
+            rgb(228, 60, 18),
+            hsl(0, 76%, 46%));
+    color: #fff;
+    padding: 14px 28px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    box-shadow: 0 4px 8px rgba(190, 39, 39, 0.25);
+    transition: .3s;
+    cursor: pointer;
+    border: none;
+}
+
+.button-danger :hover {
+    box-shadow: 0 4px 12px rgba(190, 39, 39, 0.25);
+}
+
+
+/*=============== INPUTS ===============*/
+
+.input-field {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+
+.input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.input-field input::placeholder {
+    color: #aaa;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+/*=============== RADIO ===============*/
+
+/* Hide the default checkbox */
+.container__radius input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container__radius {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 10px;
+    
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #ccc;
+    border-radius: 25px;
+    -webkit-transition: 0.15s;
+    transition: 0.15s;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container__radius input:checked~.checkmark {
+    background-color: #0080ff;
+    border-radius: 25px;
+    -webkit-transition: 0.15s;
+    transition: 0.15s;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container__radius input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container__radius .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*=============== CHECKBOX ===============*/
+
+/* Hide the default checkbox */
+.container__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container__checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmark2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #ccc;
+    border-radius: 10px;
+    -webkit-transition: 0.15s;
+    transition: 0.15s;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container__checkbox input:checked~.checkmark2 {
+    background-color: #0080ff;
+    border-radius: 10px;
+    -webkit-transition: 0.15s;
+    transition: 0.15s;
+}
+
+/* Create the checkmark2/indicator (hidden when not checked) */
+.checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark2 when checked */
+.container__checkbox input:checked~.checkmark2:after {
+    display: block;
+}
+
+/* Style the checkmark2/indicator */
+.container__checkbox .checkmark2:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*=============== SELECT ===============*/
+
+.dropdown 
+{
+	position: relative;
+	margin-top: 20px;
+	width: 300px;
+	height: 50px;
+}
+.dropdown::before 
+{
+	content: '';
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #333;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	transform: rotate(-45deg);
+	z-index: 10;
+	transition: 0.5s;
+}
+.dropdown.active::before 
+{
+	top: 22px;
+	transform: rotate(-225deg);
+}
+.dropdown input 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	padding: 12px 20px;
+	font-size: 16px;
+	background: #fff;
+	text-transform: capitalize;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+	outline: none;
+}
+.dropdown .option 
+{
+	position: absolute;
+	top: 70px;
+	width: 100%;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 30px 30px rgba(0,0,0,0.05);
+	overflow: hidden;
+	display: none;
+	text-transform: capitalize;
+}
+.dropdown.active .option 
+{
+	display: block;
+}
+.dropdown .option div 
+{
+	padding: 12px 20px;
+	cursor: pointer;
+}
+.dropdown .option div:hover 
+{
+	background: #0080ff;
+	color: #fff;
+}
+.dropdown .option ion-icon 
+{
+	position: relative;
+	top: 4px;
+	font-size: 1.2em;
+}

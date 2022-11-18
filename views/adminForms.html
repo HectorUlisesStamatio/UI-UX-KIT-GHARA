@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./../img/favicon.png" type="image/x-icon">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./../css/admin.css">
+    <link rel="stylesheet" href="./../css/resources.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>GHARA | Forms</title>
+</head>
+
+<body>
+    <!--Sidebar -->
+    <nav class="nav">
+        <ul class="nav__list">
+            <a href="#" class="nav__link">
+                <i class="ri-dashboard-3-line"></i>
+                <span class="nav__name">Dashboard</span>
+            </a>
+
+            <a href="" class="nav__link active-link">
+                <i class="ri-keyboard-box-line"></i>
+                <span class="nav__name">Forms</span>
+            </a>
+
+            <a href="./../index.html#pricing" class="nav__link">
+                <i class="ri-pie-chart-2-line"></i>
+                <span class="nav__name">Gráficos</span>
+            </a>
+
+            <a href="./adminNotifications.html" class="nav__link ">
+                <i class="ri-slideshow-line"></i>
+                <span class="nav__name">Notificaciones</span>
+            </a>
+        </ul>
+
+        <!-- Shapes -->
+        <div class="nav__circle-1"></div>
+        <div class="nav__circle-2"></div>
+
+        <div class="nav__square-1"></div>
+        <div class="nav__square-2"></div>
+    </nav>
+
+    <main>
+        <section id="resources">
+            <h2>Inputs y Forms</h2>
+            <!-- Some inputs -->
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Usuario" />
+            </div>
+            <div class="input-field">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Correo" />
+            </div>
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Contraseña" />
+            </div>
+
+            <br>
+            <!-- Checkbox and Radius -->
+            <label class="container__radius">
+                Radius
+                <input type="radio">
+                <div class="checkmark"></div>
+            </label>
+            <label class="container__checkbox">
+                Checkbox
+                <input type="checkbox" checked="checked">
+                <div class="checkmark2"></div>
+            </label>
+
+            <br>
+            <!-- Pickers -->
+            <input type="time">
+            <input type="date">
+
+            <div class="dropdown">
+                <input type="text" class="text2" readonly placeholder="Seleccione una opción">
+                <div class="option">
+                    <div onclick="show('Casa')">
+                        <ion-icon name="home-outline"></ion-icon> Casa
+                    </div>
+                    <div onclick="show('Edificio')">
+                        <ion-icon name="business-outline"></ion-icon> Edificio
+                    </div>
+                    <div onclick="show('Comercio')">
+                        <ion-icon name="storefront-outline"></ion-icon> Comercio
+                    </div>
+                </div>
+            </div>
+
+            <h3>Botones</h3>
+            <!-- Buttons -->
+            <button class="button-primary">Ejemplo</button>
+            <button class="button-success">Ejemplo</button>
+            <button class="button-warning">Ejemplo</button>
+            <button class="button-danger">Ejemplo</button>
+        </section>
+
+    </main>
+
+    <!--=============== IONICONS ===============-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--=============== CUSTOM SELECT JS ===============-->
+    <script>
+        function show(a) {
+            document.querySelector('.text2').value = a;
+        }
+        let dropdown = document.querySelector('.dropdown');
+        dropdown.onclick = function () {
+            dropdown.classList.toggle('active')
+        }
+    </script>
+    <!--=============== MAIN JS ===============-->
+    <script src="./../js/adminMain.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

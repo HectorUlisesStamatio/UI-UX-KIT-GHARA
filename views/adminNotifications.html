@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./../img/favicon.png" type="image/x-icon">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./../css/admin.css">
+    <link rel="stylesheet" href="./../css/resources.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>GHARA | Notificaciones</title>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <nav class="nav">
+        <ul class="nav__list">
+            <a href="#" class="nav__link">
+                <i class="ri-dashboard-3-line"></i>
+                <span class="nav__name">Dashboard</span>
+            </a>
+
+            <a href="./adminForms.html" class="nav__link">
+                <i class="ri-keyboard-box-line"></i>
+                <span class="nav__name">Forms</span>
+            </a>
+
+            <a href="#" class="nav__link">
+                <i class="ri-pie-chart-2-line"></i>
+                <span class="nav__name">Gráficos</span>
+            </a>
+
+            <a href="./adminNotifications.html" class="nav__link active-link">
+                <i class="ri-slideshow-line"></i>
+                <span class="nav__name">Notificaciones</span>
+            </a>
+
+
+        </ul>
+
+        <!-- Shapes -->
+        <div class="nav__circle-1"></div>
+        <div class="nav__circle-2"></div>
+
+        <div class="nav__square-1"></div>
+        <div class="nav__square-2"></div>
+    </nav>
+
+    <main>
+        <section id="resources">
+            <h2>Notificaciones</h2>
+            <!-- Notification example -->
+            <button class="button-primary" onclick="exam()">Prueba</button>
+            <div class="example" id="example">
+                <div class="toast success">
+                    <div class="container-1">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="container-2">
+                        <p>Éxito</p>
+                        <p>Los cambios se han guardado.</p>
+                    </div>
+                    <button onclick="exam()">&times;</button>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <!-- Notification Success -->
+                <div class="toast success">
+                    <div class="container-1">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="container-2">
+                        <p>Éxito</p>
+                        <p>Los cambios se han guardado.</p>
+                    </div>
+                    <button>&times;</button>
+                </div>
+                <!-- Notification error -->
+                <div class="toast error">
+                    <div class="container-1">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div class="container-2">
+                        <p>Error</p>
+                        <p>Ocurrió un error al guardar.</p>
+                    </div>
+                    <button>&times;</button>
+                </div>
+                <!-- Notification info -->
+                <div class="toast info">
+                    <div class="container-1">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="container-2">
+                        <p>Info</p>
+                        <p>Ahora tienes nuevos permisos.</p>
+                    </div>
+                    <button>&times;</button>
+                </div>
+                <!-- Notification warning -->
+                <div class="toast warning">
+                    <div class="container-1">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="container-2">
+                        <p>Atención</p>
+                        <p>Usuario inválido.</p>
+                    </div>
+                    <button>&times;</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./../js/adminMain.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>

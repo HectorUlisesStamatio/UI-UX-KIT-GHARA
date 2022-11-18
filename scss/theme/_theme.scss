@@ -1,0 +1,83 @@
+/*=============== THEME ===============*/
+.change-theme{
+    font-size: 1.25rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover{
+        color: var(--first-color);
+    }
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+    --first-color: hsl(228, 66%, 62%);
+    --second-color: hsl(25, 57%, 54%);
+    --title-color: hsl(228, 8%, 95%);
+    --text-color: hsl(228, 8%, 70%);
+    --border-color: hsl(228, 16%, 14%);
+    --body-color: hsl(228, 12%, 8%);
+    --container-color: hsl(228, 16%, 12%);
+}
+
+/*========== 
+    Color changes in some parts of 
+    the website, in dark theme 
+==========*/
+
+.dark-theme{
+    & .home__search,
+    & .swiper-button-next,
+    & .swiper-button-prev{
+        border: 3px solid var(--border-color);
+    }
+}
+
+.dark-theme{
+    & .nav__menu,
+    & .home__img,
+    & .popular__card:hover,
+    & .value__img,
+    & .accordion-open,
+    & .accordion-open .value__accordion-icon,
+    & .accordion-open .value__accordion-arrow,
+    & .contact__img,
+    & .contact__card-box:hover,
+    & .scrollup{
+        box-shadow: none;
+    }
+}
+
+.dark-theme{
+    & .value__orbe,
+    & .value__accordion-icon,
+    & .value__accordion-arrow,
+    & .contact__orbe,
+    & .contact__card i,
+    & .contact__card-button,
+    & .subscribe__container{
+        background-color: var(--container-color);
+    }
+}
+
+.dark-theme{
+    & .subscribe__container{
+        border: 6px solid var(--border-color);
+    }
+    & .subscribe__description{
+        color: var(--text-color);
+    }
+}
+
+.dark-theme::-webkit-scrollbar{
+    background-color: hsl(228, 4%, 15%);
+    
+    &-thumb{
+        background-color: hsl(228, 4%, 25%);
+        
+        &:hover{
+            background-color: hsl(228, 4%, 35%);
+        }
+    }
+}

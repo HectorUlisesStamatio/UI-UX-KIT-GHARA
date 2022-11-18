@@ -1,0 +1,91 @@
+/*=============== HOME ===============*/
+.home{
+    background: linear-gradient(170deg, 
+                hsl(0, 0%, 22%) 0%,
+                hsl(0, 0%, 6%) 30%);
+    padding-bottom: 0;
+
+    &__container{
+        padding-top: 4rem;
+        row-gap: 3.5rem;
+    }
+    &__title,
+    &__value-number{
+        color: #fff;
+    }
+    &__title{
+        font-size: var(--biggest-font-size);
+        line-height: 120%;
+        margin-bottom: 1.25rem;
+    }
+    &__description{
+        color: var(--text-color-light);
+        margin-bottom: 2rem;
+    }
+    &__search{
+        background-color: var(--body-color);
+        padding: .35rem .35rem .35rem .75rem;
+        display: flex;
+        align-items: center;
+        border-radius: .75rem;
+        border: 3px solid var(--text-color-light);
+        margin-bottom: 2rem;
+
+        & i{
+            font-size: 1.25rem;
+            color: var(--first-color);
+        }
+        &-input{
+            width: 90%;
+            background-color: var(--body-color);
+            color: var(--text-color);
+            margin: 0 .5rem;
+            
+            &::placeholder{
+                color: var(--text-color-light);
+            }
+        }
+    }
+    &__value{
+        display: flex;
+        column-gap: 2.5rem;
+
+        &-number{
+            font-size: var(--h1-font-size);
+            font-weight: var(--font-medium);
+
+            & span{
+                color: var(--second-color);
+            }
+        }
+        &-description{
+            display: flex;
+            color: var(--text-color-light);
+            font-size: var(--smaller-font-size);
+        }
+    }
+    &__images{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    &__orbe{
+        width: 265px;
+        height: 284px;
+        background: linear-gradient(180deg,
+                    hsl(0, 0%, 16%) 93%,
+                    hsl(0, 0%, 67%) 100%);
+        border-radius: 135px 135px 0 0;
+    }
+    &__img{
+        position: absolute;
+        width: 250px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 125px 125px 12px 12px;
+        display: inline-flex;
+        align-items: flex-end;
+        bottom: -1.5rem;
+        box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+    }
+}

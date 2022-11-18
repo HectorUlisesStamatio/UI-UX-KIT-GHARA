@@ -1,0 +1,359 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 350px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .section{
+        padding: 3.5rem 0 1rem;
+    }
+
+    .home{
+        padding-bottom: 0;
+    }
+
+    .contact__card{
+        grid-template-columns: repeat(1, 180px);
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .nav__menu{
+        padding: 1.3rem 1.5rem;
+    }
+
+    .home{
+        &__value{
+            column-gap: 1rem;
+        }
+        &__img{
+            width: 220px;
+            height: 280px;
+        }
+        &__orbe{
+            width: 240px;
+            height: 264px;
+        }
+    }
+
+    .logos__container{
+        gap: 2rem 1rem;
+    }
+
+    .popular__card{
+        width: 230px;
+        padding: .5rem .5rem .75rem;
+    }
+
+
+    .value__img,
+    .contact__img{
+        width: 220px;
+        height: 260px;
+    }
+    .value__orbe,
+    .contact__orbe{
+        width: 236px;
+        height: 280px;
+    }
+    
+    .subscribe__container{
+        padding: 2rem 1rem;
+    }
+
+    .footer__content{
+        gap: 2.5rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+    .nav__menu{
+        width: 342px;
+    }
+
+    .home__search{
+        width: 412px;
+    }
+
+    .contact__card{
+        grid-template-columns: repeat(2, 192px);
+        justify-content: center;
+    }
+
+    .footer__content{
+        grid-template-columns: repeat(3, max-content);
+    }
+}
+
+@media screen and (min-width: 767px){
+    .home{
+        &__container{
+            grid-template-columns: repeat(2, 1fr);
+            padding-top: 2rem;
+        }
+        &__orbe{
+            align-self: flex-end;
+        }
+        &__data{
+            padding-bottom: 2rem;
+        }
+    }
+
+    .logos__container{
+        grid-template-columns: repeat(4, max-content);
+        justify-content: center;
+    }
+
+    .value__container,
+    .contact__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    
+    .contact{
+        &__images{
+            order: 1;
+        }
+        &__card{
+            justify-content: initial;
+        }
+    }
+
+    .subscribe__container{
+        padding: 3rem 13rem;
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(2, max-content);
+        justify-content: space-between;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1023px){
+    .section {
+        padding: 7.5rem  0 1rem;
+
+        &__title{
+            font-size: 2.25rem;
+        }
+        &__subtitle{
+            font-size: var(--normal-font-size);
+        }
+    }
+
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+
+        &__menu{
+            width: initial;
+            margin-left: auto;
+        }
+        &__list{
+            display: flex;
+            column-gap: 3rem;
+        }
+        &__link{
+            color: var(--text-color-light);
+        }
+        &__link i{
+            display: none;
+        }
+        &__button{
+            display: inline-block;
+        }
+    }
+
+    .active-link{
+        background: none;
+        box-shadow: none;
+        color: var(--first-color);
+        font-weight: var(--font-medium);
+    }
+
+    .change-theme{
+        margin: 0 3rem;
+        color: var(--text-color-light);
+    }
+
+    .scroll-header .nav__link,
+    .scroll-header .change-theme{
+        color: var(--text-color);
+    }
+    .scroll-header .active-link{
+        color: var(--first-color);
+    }
+
+    .home{
+        padding-bottom: 0;
+
+        &__container{
+            padding-top: 5rem;
+            column-gap: 2rem;
+        }
+        &__data{
+            padding-bottom: 4rem;
+        }
+        
+        &__title{
+            margin-bottom: 2rem;
+        }
+        &__description,
+        &__search{
+            margin-bottom: 3rem;
+        }
+        &__value{
+            column-gap: 3.5rem;
+        }
+        &__orbe{
+            width: 504px;
+            height: 611px;
+            border-radius: 256px 256px 0 0;
+        }
+        &__img{
+            width: 472px;
+            height: 634px;
+            border-radius: 236px 236px 12px 12px;
+            bottom: -2.5rem;
+        }
+    }
+
+    .logos__img img{
+        height: 100px;
+    }
+
+    .popular{
+        &__container{
+            padding-top: 3rem;
+        }
+        &__card{
+            width: 320px;
+            padding: .75rem .75rem 2rem;
+        }
+        &__data{
+            padding: 0 .25rem 0 .75rem;
+        }
+    }
+
+    .value__container,
+    .contact__container{
+        align-items: flex-start;
+        column-gap: 5rem;
+    }
+
+    .value__orbe,
+    .contact__orbe{
+        width: 501px;
+        height: 641px;
+        border-radius: 258px 258px 16px 16px;
+    }
+
+    .value__img,
+    .contact__img{
+        width: 461px;
+        height: 601px;
+        border-radius: 238px 238px 12px 12px;
+
+        & img{
+            max-width: initial;
+            width: 490px;
+        }
+    }
+
+    .value__description,
+    .contact__description{
+        font-size: var(--normal-font-size);
+        margin-bottom: 2.5rem;
+    }
+
+    .value{
+        &__accordion-title{
+            font-size: var(--normal-font-size);
+        }
+        &__accordion-item{
+            padding: 1.25rem 1.25rem 1.25rem 1rem;
+        }
+        &__accordion-description{
+            padding-bottom: 1rem;
+            font-size: var(--small-font-size);
+        }
+    }
+
+    .contact{
+        &__card{
+            grid-template-columns: repeat(2, 200px);
+        }
+        &__card-box{
+            padding: 28px 1.5rem 1.5rem;
+        }
+    }
+
+    .subscribe{
+        &__container{
+            padding: 4rem 10rem 4.5rem;
+            border-radius: 2rem;
+            border: 12px solid var(--first-color-light);
+        }
+        &__title{
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        &__description{
+            font-size: var(--normal-font-size);
+            padding: 0 8rem;
+        }
+        &__button{
+            font-size: var(--normal-font-size);
+        }
+    }
+
+    .footer{
+        &__content{
+            grid-template-columns: repeat(4, max-content);
+        }
+        &__title{
+            margin-bottom: 1.5rem;
+        }
+        &__links{
+            row-gap: 1rem;
+        }
+        &__info{
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 2rem;
+        }
+    }
+
+    .show-scroll{
+        bottom: 3rem;
+        right: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 1040px){
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home__container{
+        column-gap: 4rem;
+    }
+}
+
+/* For 2K & 4K resolutions */
+@media screen and (min-width: 2048px){
+    body{
+        zoom: 1.5;
+    }
+}
+@media screen and (min-width: 3840px){
+    body{
+        zoom: 2;
+    }
+}

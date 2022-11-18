@@ -1,0 +1,90 @@
+/*=============== HEADER & NAV ===============*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: var(--z-fixed);
+    transition: .4s; /* for light mode animation */
+}
+
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        column-gap: .25rem;
+        font-weight: var(--font-medium);
+        transition: .3s;
+
+        & i{
+            font-size: 1rem;
+        }
+        &:hover{
+            color: var(--first-color);
+        }
+    }
+    @media screen and (max-width: 1023px){
+        &__menu{
+            position: fixed;
+            bottom: 2rem;
+            background-color: var(--container-color);
+            box-shadow: 0 8px 24px hsla(228%, 66%, 45%, .15);
+            width: 90%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: 1.30rem 3rem;
+            border-radius: 1.25rem;
+            transition: .4s;
+        }
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__link{
+            color: var(--text-color);
+            display: flex;
+            padding: .5rem;
+            border-radius: 50%;
+            
+            & i{
+                font-size: 1.25rem;
+            }
+            & span{
+                display: none;
+            }
+        }
+    }
+}
+
+/* Change background header */
+.scroll-header {
+    background-color: var(--body-color);
+    box-shadow: 0 1px 4px hsla(228, 4%, 15%, .1);
+
+    & .nav__logo{
+        color: var(--first-color);
+    }
+
+    & .change-theme{
+        color: var(--title-color);
+    }
+}
+  
+/* Active link */
+.active-link {
+    background: linear-gradient(101deg,
+                hsl(228, 66%, 53%),
+                hsl(228, 66%, 47%));
+
+    color: #fff;
+    box-shadow: 0 4px 8px hsla(228%, 66%, 45%, .25);
+}
