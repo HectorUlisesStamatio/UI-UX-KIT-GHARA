@@ -77,3 +77,10 @@ A UX/UI KIT developed using html, css, javascript and sass, ready to be implemen
  -  Register Product
  -  Full Responsive
 </div>
+
+
+## 🖥️Author
+
+- [@HectorUlisesStamatio](https://www.github.com/HectorUlisesStamatio)
+
+
