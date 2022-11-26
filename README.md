@@ -18,15 +18,15 @@ A UX/UI KIT developed using html, css, javascript and sass, ready to be implemen
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| First Color |  #6b9eeb |
-| First Color Alt |  #4d7abe |
-| First Color Light |  #5670d7 |
-| First Color Lighten|  #f0f3ff |
-| Second Color|  #f50057 |
-| Title Color |  #1f2f70 |
-| Text Color  |  #6c7493 |
-| Text Color Light|  #b8bbc7 |
-| Border Color |  #f5f7ff |
+| First Color |   ![#6b9eeb](https://via.placeholder.com/15/6b9eeb/6b9eeb.png) `#6b9eeb` |
+| First Color Alt |   ![#4d7abe](https://via.placeholder.com/15/4d7abe/4d7abe.png) `#4d7abe` |
+| First Color Light |    ![#5670d7](https://via.placeholder.com/15/5670d7/5670d7.png) `#5670d7`|
+| First Color Lighten|     ![#f0f3ff](https://via.placeholder.com/15/f0f3ff/f0f3ff.png) `#f0f3ff`|
+| Second Color|     ![#f50057](https://via.placeholder.com/15/f50057/f50057.png) `#f50057`|
+| Title Color |     ![#1f2f70](https://via.placeholder.com/15/1f2f70/1f2f70.png) `#1f2f70`|
+| Text Color  |    ![#6c7493](https://via.placeholder.com/15/6c7493/6c7493.png) `#6c7493` |
+| Text Color Light|     ![#b8bbc7](https://via.placeholder.com/15/b8bbc7/b8bbc7.png) `#b8bbc7`|
+| Border Color |    ![#f5f7ff](https://via.placeholder.com/15/f5f7ff/f5f7ff.png) `#f5f7ff`|
 
 </div>
 
