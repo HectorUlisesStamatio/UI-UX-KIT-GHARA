@@ -4,6 +4,10 @@
 A UX/UI KIT developed using html, css, javascript and sass, ready to be implemented in any web application.
 
 
+<div align="center">
+   <img src="https://i.postimg.cc/hP9s1F6D/logo.png" width="300" height="300" alt="ghara logo"  />
+</div>
+
 ## 🛠Tech
 
 <div align="center">
