@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #6b9eeb;
+    --secondary: #4d7abe;
+    --white: #fff;
+    --text-clr: #5b6475;
+    --header-clr: #25273d;
+    --next-btn-hover: #8577d2;
+    --back-btn-hover: #8b8c8c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+   
+    outline: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    position: relative;
+}
+
+/*=============== Shopping Cart ===============*/
+
+
+.cart___wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+
+.cart___wrapper h1 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.cart___project {
+    display: flex;
+}
+
+.cart___shop {
+    flex: 75%;
+}
+
+.cart___box {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #fff;
+    transition: all .6s ease;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cart___box:hover {
+    border: none;
+    transform: scale(1.01);
+}
+
+.cart___box img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cart___content {
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.cart___content h3 {
+    margin-bottom: 30px;
+}
+
+.cart___content h4 {
+    margin-bottom: 50px;
+}
+
+.cart___btn-area {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 25px;
+    background: linear-gradient(101deg,
+            rgb(228, 60, 18),
+            hsl(0, 76%, 46%));
+    color: white;
+    cursor: pointer;
+    border-radius: 55px;
+}
+
+.cart___btn-area:hover {
+    color: #fff;
+    font-weight: 500;
+}
+
+.cart___unit input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 55px;
+    background-color: #f0f0f0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    margin-left: 10px;
+    border: none;
+}
+
+.cart___btn-area i {
+    margin-right: 5px;
+}
+
+.cart___right-bar {
+    flex: 25%;
+    margin-left: 20px;
+    padding: 20px;
+    height: 420px;
+    border-radius: 25px;
+    background: hsl(218.08, 81%, 59%);
+    color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cart___right-bar hr {
+    margin-bottom: 25px;
+}
+
+.cart___right-bar p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.cart___right-bar a {
+    background: linear-gradient(101deg,
+            rgb(33, 202, 75),
+            hsl(138, 88%, 32%));
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 900;
+    border-radius: 55px;
+    transition: all .6s ease;
+}
+
+.cart___right-bar i {
+    margin-right: 15px;
+}
+
+.cart___right-bar a:hover {
+    color: #fff;
+    font-weight: 600;
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 700px) {
+    .cart___content h3 {
+        margin-bottom: 15px;
+    }
+
+    .cart___content h4 {
+        margin-bottom: 20px;
+    }
+
+    .btn2 {
+        display: none;
+    }
+
+
+
+    .cart___box img {
+        height: 150px;
+        width: 200px;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .cart___btn-area {
+        position: absolute;
+        top: 5px;
+        width: 10px;
+        right: 5px;
+        padding: 10px 25px;
+        background: none;
+        background-size: 0;
+        
+    }
+    .cart___btn-area i {
+        margin-left: 0px;
+        font-size: 20px;
+        margin-right: 0px;
+        color:  rgb(228, 60, 18);
+        
+    }
+  
+}
+
+
+@media screen and (max-width: 900px) {
+    .cart___project {
+        flex-direction: column;
+    }
+
+    .cart___right-bar {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1250px) {
+    .cart___wrapper {
+        max-width: 95%;
+    }
+}
+
+
+/*=============== Checkout ===============*/
+
+.checkout___container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;   
+}
+
+.checkout___container form {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 160px;
+    height: 450px;
+}
+
+.exit-check{
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    cursor: pointer;
+    color:hsl(216,76%,67%);
+  }
+  
+
+.checkout___container form .inputBox {
+    margin-top: 20px;
+    border: none;
+    height: 55px;
+}
+
+.checkout___container form .inputBox span {
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+.checkout___container form .inputBox input,
+.checkout___container form .inputBox select {
+    background-color: #f0f0f0;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    width: 100%;
+    padding: 10px;
+    border-radius: 55px;
+    border: none;
+}
+
+
+.checkout___container form .inputBox input::placeholder,
+.checkout___container form .inputBox select::placeholder {
+    color: #aaa;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.checkout___container form .flexbox {
+    display: flex;
+    gap: 15px;
+    border: none;
+}
+
+.checkout___container form .flexbox .inputBox {
+    flex: 1 1 150px;
+    border: none;
+}
+
+
+
+.checkout___container form .submit-btn:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.checkout___container .card-container {
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 380px;
+}
+
+.checkout___container .card-container .front {
+
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #5670d7, #1f2f70);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    padding: 20px;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
+}
+
+.checkout___container .card-container .front .image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.checkout___container .card-container .front .image img {
+    height: 50px;
+}
+
+.checkout___container .card-container .front .card-number-box {
+    padding: 30px 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.checkout___container .card-container .front .flexbox {
+    display: flex;
+}
+
+.checkout___container .card-container .front .flexbox .box:nth-child(1) {
+    margin-right: auto;
+}
+
+.checkout___container .card-container .front .flexbox .box {
+    font-size: 15px;
+    color: #fff;
+}
+
+.checkout___container .card-container .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #5670d7, #1f2f70);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
+}
+
+.checkout___container .card-container .back .stripe {
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.checkout___container .card-container .back .box {
+    padding: 0 20px;
+}
+
+.checkout___container .card-container .back .box span {
+    color: #fff;
+    font-size: 15px;
+}
+
+.checkout___container .card-container .back .box .cvv-box {
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.checkout___container .card-container .back .box img {
+    margin-top: 30px;
+    height: 30px;
+}
+
+/*=============== Wizzard ===============*/
+.wizzard___wrapper {
+    z-index: 110;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    width: 750px;
+    max-width: 100%;
+    background: var(--white);
+    margin: 50px auto 0;
+    padding: 50px;
+    border-radius: 55px;
+    border: 1px solid rgba(27, 42, 129, 0.445);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+
+    place-items: center;
+    top: 0;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.wizzard___wrapper .wizzard___header {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.wizzard___wrapper .wizzard___header ul {
+    display: flex;
+}
+
+.wizzard___wrapper .wizzard___header ul li {
+    margin-right: 50px;
+    position: relative;
+}
+
+.wizzard___wrapper .wizzard___header ul li:last-child {
+    margin-right: 0;
+}
+
+.wizzard___wrapper .wizzard___header ul li:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 55px;
+    width: 100%;
+    height: 2px;
+    background: var(--secondary);
+}
+
+.wizzard___wrapper .wizzard___header ul li:last-child:before {
+    display: none;
+}
+
+.wizzard___wrapper .wizzard___header ul li div {
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.wizzard___wrapper .wizzard___header ul li p {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+.wizzard___wrapper .wizzard___header ul li.active:before {
+    background: var(--primary);
+}
+
+.wizzard___wrapper .wizzard___header ul li.active p {
+    background: var(--primary);
+}
+
+.wizzard___wrapper .wizzard___form_wrap {
+    margin-bottom: 35px;
+}
+
+.wizzard___wrapper .wizzard___form_wrap h2 {
+    color: var(--header-clr);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.wizzard___wrapper .wizzard___form_wrap .wizzard___input_wrap {
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto 20px;
+    grid-template-columns: 15% 85%;
+    background-color: #f0f0f0;
+    height: 55px;
+    border-radius: 55px;
+    padding: 0 0.4rem;
+    display: grid;
+}
+
+.wizzard___wrapper .wizzard___form_wrap .wizzard___input_wrap:last-child {
+    margin-bottom: 0;
+}
+
+.wizzard___wrapper .wizzard___form_wrap .wizzard___input_wrap i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+
+.wizzard___wrapper .wizzard___form_wrap .wizzard___input_wrap .input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+
+
+.wizzard___wrapper .wizzard___form_wrap .wizzard___input_wrap .input::placeholder {
+    color: #aaa;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+.wizzard___wrapper .btns_wrap {
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.wizzard___wrapper .btns_wrap .common_btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wizzard___wrapper .btns_wrap .common_btns.form_1_btns {
+    justify-content: flex-end;
+}
+
+.wizzard___wrapper .btns_wrap .common_btns button {
+    border: 0;
+    padding: 12px 15px;
+    background: var(--primary);
+    color: var(--white);
+    width: 135px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.wizzard___wrapper .btns_wrap .common_btns button.btn_back {
+    background: linear-gradient(101deg,
+            hsl(218.08, 81%, 59%),
+            hsl(216, 76%, 67%));
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3rem;
+}
+
+.wizzard___wrapper .btns_wrap .common_btns button.btn_next {
+    background: linear-gradient(101deg,
+            hsl(218.08, 81%, 59%),
+            hsl(216, 76%, 67%));
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3rem;
+
+}
+
+
+.wizzard___wrapper .btns_wrap .common_btns button.btn_done {
+    background: linear-gradient(101deg,
+            hsl(218.08, 81%, 59%),
+            hsl(216, 76%, 67%));
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3rem;
+
+}
+
+
+.wizzard___wrapper .btns_wrap .common_btns button.btn_next .icon {
+    display: flex;
+    margin-left: 10px;
+
+}
+
+.wizzard___wrapper .btns_wrap .common_btns button.btn_back .icon {
+    display: flex;
+    margin-right: 10px;
+}
+
+.wizzard___wrapper .btns_wrap .common_btns button.btn_next:hover,
+.wizzard___wrapper .btns_wrap .common_btns button.btn_done:hover {
+    box-shadow: 0 4px 12px hsla(228, 66%, 45%, .25);
+}
+
+.wizzard___wrapper .btns_wrap .common_btns button.btn_back:hover {
+    background: var(--back-btn-hover);
+}
+
+.modal_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.modal_wrapper .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+
+
+.modal_wrapper .success_wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -800px);
+    background: var(--white);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.modal_wrapper .success_wrap .modal_icon {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #47d764;
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.modal_wrapper.active {
+    visibility: visible;
+    z-index: 200;
+}
+
+.modal_wrapper.active .shadow {
+    opacity: 1;
+}
+
+.modal_wrapper.active .success_wrap {
+    transform: translate(-50%, -50%);
+}

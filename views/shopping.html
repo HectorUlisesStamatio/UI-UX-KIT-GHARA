@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito</title>
+    <!--=============== META ===============-->
+    <meta name="theme-color" content="#4285f4">
+    <title>GHARA | Carrito</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./../img/favicon.png" type="image/x-icon">
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== FONTAWESOME ===============-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--=============== CSS ===============-->
+    <link href="./../css/srtle.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cart___wrapper">
+        <h1 style="color: #6B9EEB">Mi Carrito</h1>
+        <div class="cart___project">
+            <div class="cart___shop">
+                <div class="cart___box">
+                    <img src="./../img/1.jpg">
+                    <div class="cart___content">
+                        <h3>Casa 1</h3>
+                        <h4>Precio: $40,000</h4>
+                        <p class="cart___unit">Cantidad: <input type="number" min="0" name="" value="2"></p>
+                        <p class="cart___btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span
+                                class="btn2">Quitar</span></p>
+                    </div>
+                </div>
+                <div class="cart___box">
+                    <img src="./../img/2.jpg">
+                    <div class="cart___content">
+                        <h3>Casa 2</h3>
+                        <h4>Precio: $40,000</h4>
+                        <p class="cart___unit">Cantidad: <input type="number" min="0" name="" value="1"></p>
+                        <p class="cart___btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span
+                                class="btn2">Quitar</span></p>
+                    </div>
+                </div>
+                <div class="cart___box">
+                    <img src="./../img/3.jpg">
+                    <div class="cart___content">
+                        <h3>Casa 3</h3>
+                        <h4>Precio: $250,000</h4>
+                        <p class="cart___unit">Cantidad: <input type="number" min="0" name="" value="0"></p>
+                        <p class="cart___btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span
+                                class="btn2">Quitar</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="cart___right-bar">
+                <p><span>Subtotal</span> <span>$330,000</span></p>
+                <hr>
+                <p><span>Inpuestos (5%)</span> <span>$16,500</span></p>
+                <hr>
+                <p><span>Envío</span> <span>$20,000</span></p>
+                <hr>
+                <p><span>Total</span> <span>$366,500</span></p><a onclick="checkout()" href="#"><i
+                        class="fa fa-shopping-cart"></i>Terminar Compra</a>
+            </div>
+        </div>
+    </div>
+    <div class="wizzard___wrapper" id="wizzard___wrapper">
+        <i class="fas fa-times exit-check" onclick="checkout()" title="Cancelar"></i>
+        <div class="wizzard___header">
+            <ul>
+                <li class="active form_1_progessbar">
+                    <div>
+                        <p>1</p>
+                    </div>
+                </li>
+                <li class="form_2_progessbar">
+                    <div>
+                        <p>2</p>
+                    </div>
+                </li>
+                <li class="form_3_progessbar">
+                    <div>
+                        <p>3</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="wizzard___form_wrap">
+            <div class="form_1 data_info">
+                <h2>Información personal</h2>
+                <form>
+                    <div class="form_checkout___container">
+                        <div class="wizzard___input_wrap">
+                            <i class="fas fa-user"></i>
+                            <input placeholder="Nombre Completo" type="text" name="Email Address" class="input"
+                                id="email">
+                        </div>
+                        <div class="wizzard___input_wrap">
+                            <i class="fas fa-phone-alt"></i>
+                            <input placeholder="Teléfono" type="text" name="password" class="input" id="password">
+                        </div>
+                        <div class="wizzard___input_wrap">
+                            <i class="fas fa-phone-alt"></i>
+                            <input placeholder="Teléfono Secundario" type="text" name="confirm password" class="input"
+                                id="confirm_password">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form_2 data_info" style="display: none;">
+                <h2>Dirección</h2>
+                <form>
+                    <div class="form_checkout___container">
+                        <div class="wizzard___input_wrap">
+                            <i class="fas fa-home"></i>
+                            <input placeholder="Dirección Completa" type="text" name="User Name" class="input"
+                                id="user_name">
+                        </div>
+                        <div class="wizzard___input_wrap">
+                            <i class="fas fa-truck"></i>
+                            <input placeholder="Instrucciones de entrega" type="text" name="First Name" class="input"
+                                id="first_name">
+                        </div>
+                        <div class="wizzard___input_wrap">
+                            <i class="fas fa-envelope"></i>
+                            <input placeholder="Código Postal" type="text" name="Last Name" class="input"
+                                id="last_name">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form_3 data_info" style="display: none;">
+                <div class="checkout___container">
+
+                    <div class="card-container">
+
+                        <div class="front">
+                            <div class="image">
+                                <img src="./../img/chip.png" alt="">
+                                <img src="./../img/visa.png" alt="">
+                            </div>
+                            <div class="card-number-box">################</div>
+                            <div class="flexbox">
+                                <div class="box">
+                                    <span>Dueño de la Tarjeta</span>
+                                    <div class="card-holder-name">Nombre Completo</div>
+                                </div>
+                                <div class="box">
+                                    <span>Expiración</span>
+                                    <div class="expiration">
+                                        <span class="exp-month">mm</span>
+                                        <span class="exp-year">yy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="back">
+                            <div class="stripe"></div>
+                            <div class="box">
+                                <span>cvv</span>
+                                <div class="cvv-box"></div>
+                                <img src="./../img/visa.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <form action="">
+                        <div class="inputBox">
+                            <input placeholder="Número de Tarjeta" maxlength="16" type="text" class="card-number-input">
+                        </div>
+                        <div class="inputBox">
+                            <input placeholder="Dueño de la Tarjeta" maxlength="16" type="text"
+                                class="card-holder-input">
+                        </div>
+
+                        <div class="flexbox">
+                            <div class="inputBox">
+                                <span>Mes de Expiración</span>
+                                <select name="" id="" class="month-input">
+                                    <option value="Mes" selected disabled>Mes</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="inputBox">
+                                <span>Año de Expiración</span>
+                                <select name="" id="" class="year-input">
+                                    <option value="year" selected disabled>Año</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                            </div>
+
+                            <div class="inputBox">
+                                <span>CVV</span>
+                                <input type="text" maxlength="4" class="cvv-input">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="btns_wrap">
+            <div class="common_btns form_1_btns">
+                <button type="button" class="btn_next">Siguiente <span class="icon">
+                        <ion-icon name="arrow-forward-sharp"></ion-icon>
+                    </span></button>
+            </div>
+            <div class="common_btns form_2_btns" style="display: none;">
+                <button type="button" class=" btn_back"><span class="icon">
+                        <ion-icon name="arrow-back-sharp"></ion-icon>
+                    </span>Regresar</button>
+                <button type="button" class="btn_next">Siguiente <span class="icon">
+                        <ion-icon name="arrow-forward-sharp"></ion-icon>
+                    </span></button>
+            </div>
+            <div class="common_btns form_3_btns" style="display: none;">
+                <button type="button" class="btn_back"><span class="icon">
+                        <ion-icon name="arrow-back-sharp"></ion-icon>
+                    </span>Regresar</button>
+                <button type="button" class="btn_done">Terminado</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_wrapper">
+        <div class="shadow"></div>
+        <div class="success_wrap">
+            <span class="modal_icon">
+                <ion-icon name="checkmark-sharp"></ion-icon>
+            </span>
+            <p>Se ha terminado el proceso correctamente.</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        document.querySelector('.card-number-input').oninput = () => {
+            document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
+        }
+
+        document.querySelector('.card-holder-input').oninput = () => {
+            document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
+        }
+
+        document.querySelector('.month-input').oninput = () => {
+            document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
+        }
+
+        document.querySelector('.year-input').oninput = () => {
+            document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
+        }
+
+        document.querySelector('.cvv-input').onmouseenter = () => {
+            document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
+            document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
+        }
+
+        document.querySelector('.cvv-input').onmouseleave = () => {
+            document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
+            document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
+        }
+
+        document.querySelector('.cvv-input').oninput = () => {
+            document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
+        }
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./../js/mainShop.js"></script>
+</body>
+
+</html>
