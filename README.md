@@ -48,10 +48,7 @@ A UX/UI KIT developed using html, css, javascript and sass, ready to be implemen
  |  FormElements | https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/adminForms.html |
  |  Notifications | https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/adminNotifications.html |
  |  Charts | https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/adminCharts.html |
- |  Shopping Cart | ... |
- |  Payment Views | ... |
- |  Wizzard | ...|
- |  Chekout | ...|
+ |  Shopping Cart | https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/shopping.html |
  |  Dashboard |...|
  |  Register Product |...|
 </div>
