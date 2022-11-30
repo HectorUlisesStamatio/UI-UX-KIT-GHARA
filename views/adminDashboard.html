@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--=============== REMIXICONS ===============-->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<!--=============== FAVICON ===============-->
+	<link rel="shortcut icon" href="./../img/favicon.png" type="image/x-icon">
+	<!--=============== BOXICONS ===============-->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!--=============== CSS ===============-->
+	<link rel="stylesheet" href="./../css/dashboard.css">
+	<link rel="stylesheet" href="./../css/admin.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<title>GHARA | Dashboard</title>
+</head>
+
+<body>
+
+	<!--=============== SIDEBAR ===============-->
+	<nav class="nav">
+		<ul class="nav__list">
+			<a href="#" class="nav__link  active-link">
+				<i class="ri-dashboard-3-line"></i>
+				<span class="nav__name">Dashboard</span>
+			</a>
+
+			<a href="./adminForms.html" class="nav__link">
+				<i class="ri-keyboard-box-line"></i>
+				<span class="nav__name">Forms</span>
+			</a>
+
+			<a href="#" class="nav__link">
+				<i class="ri-pie-chart-2-line"></i>
+				<span class="nav__name">Gráficos</span>
+			</a>
+
+			<a href="./adminNotifications.html" class="nav__link">
+				<i class="ri-slideshow-line"></i>
+				<span class="nav__name">Notificaciones</span>
+			</a>
+
+
+		</ul>
+
+		<!--=============== SHAPES ===============-->
+		<div class="nav__circle-1"></div>
+		<div class="nav__circle-2"></div>
+
+		<div class="nav__square-1"></div>
+		<div class="nav__square-2"></div>
+	</nav>
+
+	<!--=============== CONTENT ===============-->
+	<section id="dashboard___content">
+
+		<!--=============== MAIN ===============-->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1 style="color:#1f2f70">Dashboard</h1>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download'></i>
+					<span class="text">Descargar</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check'></i>
+					<span class="text">
+						<h3>60</h3>
+						<p>Nuevas Compras</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group'></i>
+					<span class="text">
+						<h3>2834</h3>
+						<p>Visitantes</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-dollar-circle'></i>
+					<span class="text">
+						<h3>$2789320</h3>
+						<p>Ventas totales</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<table style="margin-bottom: 100px;" id="bar-example-17"
+						class="charts-css bar show-labels show-primary-axis show-data-axes data-spacing-10 show-heading">
+						<caption> Ventas por año </caption>
+						<thead>
+							<tr>
+								<th scope="col"> Año </th>
+								<th scope="col"> Progreso </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row"> 2016 </th>
+								<td style="--size:0.2;"></td>
+							</tr>
+							<tr>
+								<th scope="row"> 2017 </th>
+								<td style="--size:0.4;"></td>
+							</tr>
+							<tr>
+								<th scope="row"> 2018 </th>
+								<td style="--size:0.6;"></td>
+							</tr>
+							<tr>
+								<th scope="row"> 2019 </th>
+								<td style="--size:0.8;"></td>
+							</tr>
+							<tr>
+								<th scope="row"> 2020 </th>
+								<td style="--size:1;"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="order">
+					<table style="height:300px;" id="line-example-11" class="charts-css line multiple hide-data show-labels show-primary-axis show-heading">
+						<caption> Incremento de visitas </caption>
+						<thead>
+						  <tr>
+							<th scope="col"> Año </th>
+							<th scope="col"> Progreso 1 </th>
+							<th scope="col"> Progreso 2 </th>
+							<th scope="col"> Progreso 3 </th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<th scope="row"> 2000 </th>
+							<td style="--start:0.1; --size:0.5;"><span class="data"> 50 </span></td>
+							<td style="--start:0; --size:0.2;"><span class="data"> 20 </span></td>
+							<td style="--start:0.2; --size:0.4;"><span class="data"> 40 </span></td>
+						  </tr>
+						  <tr>
+							<th scope="row"> 2010 </th>
+							<td style="--start:0.5; --size:0.8;"><span class="data"> 80 </span></td>
+							<td style="--start:0.2; --size:0.5;"><span class="data"> 50 </span></td>
+							<td style="--start:0.4; --size:0.1;"><span class="data"> 10 </span></td>
+						  </tr>
+						  <tr>
+							<th scope="row"> 2020 </th>
+							<td style="--start:0.8; --size:0.4;"><span class="data"> 40 </span></td>
+							<td style="--start:0.5; --size:0.3;"><span class="data"> 30 </span></td>
+							<td style="--start:0.1; --size:0.2;"><span class="data"> 20 </span></td>
+						  </tr>
+						</tbody>
+					  </table>
+				</div>
+
+			</div>
+
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Compras Recientes</h3>
+						<i class='bx bx-search'></i>
+						<i class='bx bx-filter'></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Usuario</th>
+								<th>Fecha de la Compra</th>
+								<th>Estado</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="./../img/people.png">
+									<p>Juan Pérez</p>
+								</td>
+								<td>02/10/2021</td>
+								<td><span class="status completed">Completado</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="./../img/people.png">
+									<p>Juan Pérez</p>
+								</td>
+								<td>02/10/2021</td>
+								<td><span class="status pending">Pendiente</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="./../img/people.png">
+									<p>Juan Pérez</p>
+								</td>
+								<td>02/10/2021</td>
+								<td><span class="status process">En espera..</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="./../img/people.png">
+									<p>Juan Pérez</p>
+								</td>
+								<td>02/10/2021</td>
+								<td><span class="status pending">Pendiente</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="./../img/people.png">
+									<p>Juan Pérez</p>
+								</td>
+								<td>02/10/2021</td>
+								<td><span class="status completed">Completo</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="todo">
+					<div class="head">
+						<h3>Pendientes</h3>
+						<i class='bx bx-plus'></i>
+						<i class='bx bx-filter'></i>
+					</div>
+					<ul class="todo-list">
+						<li class="completed">
+							<p>Pendiente 1</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="completed">
+							<p>Pendiente 2</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="not-completed">
+							<p>Pendiente 3</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="completed">
+							<p>Pendiente 4</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+						<li class="not-completed">
+							<p>Pendiente 5</p>
+							<i class='bx bx-dots-vertical-rounded'></i>
+						</li>
+					</ul>
+				</div>
+				<div class="table-data">
+					<div class="order">
+						<div class="head">
+							<h3>Últimas Compras</h3>
+							<i class='bx bx-search'></i>
+							<i class='bx bx-filter'></i>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th>Usuario</th>
+									<th>Precio</th>
+									<th>Fecha de la Compra</th>
+									<th>Estado</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<img src="./../img/people.png">
+										<p>Juan Pérez</p>
+									</td>
+									<td>$750000</td>
+									<td>02/10/2021</td>
+									<td><span class="status completed">Completo</span></td>
+								</tr>
+								<tr>
+									<td>
+										<img src="./../img/people.png">
+										<p>Juan Pérez</p>
+									</td>
+									<td>$850000</td>
+									<td>02/10/2021</td>
+									<td><span class="status completed">Completo</span></td>
+								</tr>
+								<tr>
+									<td>
+										<img src="./../img/people.png">
+										<p>Juan Pérez</p>
+									</td>
+									<td>$650000</td>
+									<td>02/10/2021</td>
+									<td><span class="status completed">Completo</span></td>
+								</tr>
+								<tr>
+									<td>
+										<img src="./../img/people.png">
+										<p>Juan Pérez</p>
+									</td>
+									<td>$550000</td>
+									<td>02/10/2021</td>
+									<td><span class="status completed">Completo</span></td>
+								</tr>
+								<tr>
+									<td>
+										<img src="./../img/people.png">
+										<p>Juan Pérez</p>
+									</td>
+									<td>$250000</td>
+									<td>02/10/2021</td>
+									<td><span class="status completed">Completo</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+		</main>
+		<!--=============== MAIN ===============-->
+	</section>
+	<!--=============== CONTENT ===============-->
+
+
+</body>
+
+</html>

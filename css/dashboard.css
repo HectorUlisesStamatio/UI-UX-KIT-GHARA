@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+
+	--light: #F9F9F9;
+	--blue: #6b9eeb;
+	--light-blue: #85b6ff76;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #f50057;
+	--yellow: #5670d7;
+	--light-yellow: #8199f6b2;
+	--orange: #d0215e;
+	--light-orange: #f36b9bbd;
+}
+
+
+
+
+
+/* CONTENT */
+#dashboard___content {
+	position: relative;
+	width: calc(100% - 180px);
+	transition: .3s ease;
+}
+
+
+/* MAIN */
+#dashboard___content main {
+	width: 100%;
+	padding: 36px 24px;
+	font-family: var(--poppins);
+	max-height:100%;
+	overflow-y: auto;
+}
+#dashboard___content main .head-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 16px;
+	flex-wrap: wrap;
+}
+#dashboard___content main .head-title .left h1 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: var(--dark);
+}
+#dashboard___content main .head-title .left .breadcrumb {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+}
+#dashboard___content main .head-title .left .breadcrumb li {
+	color: var(--dark);
+}
+#dashboard___content main .head-title .left .breadcrumb li a {
+	color: var(--dark-grey);
+	pointer-events: none;
+}
+#dashboard___content main .head-title .left .breadcrumb li a.active {
+	color: var(--blue);
+	pointer-events: unset;
+}
+#dashboard___content main .head-title .btn-download {
+	height: 36px;
+	padding: 0 16px;
+	border-radius: 36px;
+	background: var(--blue);
+	color: var(--light);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 10px;
+	font-weight: 500;
+}
+
+
+
+
+#dashboard___content main .box-info {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-gap: 24px;
+	margin-top: 36px;
+}
+#dashboard___content main .box-info li {
+	padding: 24px;
+	background: var(--light);
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	grid-gap: 24px;
+}
+#dashboard___content main .box-info li .bx {
+	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	font-size: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#dashboard___content main .box-info li:nth-child(1) .bx {
+	background: var(--blue);
+	color: var(--light);
+}
+#dashboard___content main .box-info li:nth-child(2) .bx {
+	background: var(--orange);
+	color: var(--light);
+}
+#dashboard___content main .box-info li:nth-child(3) .bx {
+	background: var(--yellow);
+	color: var(--light);
+}
+#dashboard___content main .box-info li .text h3 {
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--dark);
+}
+#dashboard___content main .box-info li .text p {
+	color: var(--dark);	
+}
+
+
+
+
+
+#dashboard___content main .table-data {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 24px;
+	margin-top: 24px;
+	width: 100%;
+	color: var(--dark);
+}
+#dashboard___content main .table-data > div {
+	border-radius: 20px;
+	background: var(--light);
+	padding: 24px;
+	overflow-x: auto;
+}
+#dashboard___content main .table-data .head {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+	margin-bottom: 24px;
+}
+#dashboard___content main .table-data .head h3 {
+	margin-right: auto;
+	font-size: 24px;
+	font-weight: 600;
+}
+#dashboard___content main .table-data .head .bx {
+	cursor: pointer;
+}
+
+#dashboard___content main .table-data .order {
+	flex-grow: 1;
+	flex-basis: 500px;
+}
+#dashboard___content main .table-data .order table {
+	width: 100%;
+	border-collapse: collapse;
+}
+#dashboard___content main .table-data .order table th {
+	padding-bottom: 12px;
+	font-size: 13px;
+	text-align: left;
+	border-bottom: 1px solid var(--grey);
+}
+#dashboard___content main .table-data .order table td {
+	padding: 16px 0;
+}
+#dashboard___content main .table-data .order table tr td:first-child {
+	display: flex;
+	align-items: center;
+	grid-gap: 12px;
+	padding-left: 6px;
+}
+#dashboard___content main .table-data .order table td img {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+#dashboard___content main .table-data .order table tbody tr:hover {
+	background: var(--grey);
+}
+#dashboard___content main .table-data .order table tr td .status {
+	font-size: 10px;
+	padding: 6px 16px;
+	color: var(--light);
+	border-radius: 20px;
+	font-weight: 700;
+}
+#dashboard___content main .table-data .order table tr td .status.completed {
+	background: var(--blue);
+}
+#dashboard___content main .table-data .order table tr td .status.process {
+	background: var(--yellow);
+}
+#dashboard___content main .table-data .order table tr td .status.pending {
+	background: var(--orange);
+}
+
+
+#dashboard___content main .table-data .todo {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+#dashboard___content main .table-data .todo .todo-list {
+	width: 100%;
+}
+#dashboard___content main .table-data .todo .todo-list li {
+	width: 100%;
+	margin-bottom: 16px;
+	background: var(--grey);
+	border-radius: 10px;
+	padding: 14px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#dashboard___content main .table-data .todo .todo-list li .bx {
+	cursor: pointer;
+}
+#dashboard___content main .table-data .todo .todo-list li.completed {
+	border-left: 10px solid var(--blue);
+}
+#dashboard___content main .table-data .todo .todo-list li.not-completed {
+	border-left: 10px solid var(--orange);
+}
+#dashboard___content main .table-data .todo .todo-list li:last-child {
+	margin-bottom: 0;
+}
+/* MAIN */
+/* CONTENT */
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+	#dashboard___content nav .nav-link {
+		display: none;
+	}
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+	#dashboard___content nav form .form-input input {
+		display: none;
+	}
+
+	#dashboard___content nav form .form-input button {
+		width: auto;
+		height: auto;
+		background: transparent;
+		border-radius: none;
+		color: var(--dark);
+	}
+
+	#dashboard___content nav form.show .form-input input {
+		display: block;
+		width: 100%;
+	}
+	#dashboard___content nav form.show .form-input button {
+		width: 36px;
+		height: 100%;
+		border-radius: 0 36px 36px 0;
+		color: var(--light);
+		background: var(--red);
+	}
+
+	#dashboard___content nav form.show ~ .notification,
+	#dashboard___content nav form.show ~ .profile {
+		display: none;
+	}
+
+	#dashboard___content main .box-info {
+		grid-template-columns: 1fr;
+	}
+
+	#dashboard___content main .table-data .head {
+		min-width: 420px;
+	}
+	#dashboard___content main .table-data .order table {
+		min-width: 420px;
+	}
+	#dashboard___content main .table-data .todo .todo-list {
+		min-width: 420px;
+	}
+}
