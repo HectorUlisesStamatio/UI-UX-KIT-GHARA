@@ -28,6 +28,20 @@ body {
 
 /*=============== Shopping Cart ===============*/
 
+.ft{
+    width: 100%;
+    z-index: -10;
+    position: fixed;
+    bottom: 1px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .ft{
+        display: none;
+    }
+}
+
 
 .cart___wrapper {
     max-width: 90%;
