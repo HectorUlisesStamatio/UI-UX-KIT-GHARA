@@ -4,7 +4,7 @@
 :root {
 	--poppins: 'Poppins', sans-serif;
 
-	--light: hsl(0, 0%, 98%);
+	--light: hsl(0, 0%, 96.5%);
 	--blue: hsl(216, 76%, 67%);
 	--light-blue: hsla(216, 100%, 76%, 0.463);
 	--grey: hsl(0, 0%, 93%);
