@@ -50,6 +50,8 @@ A UX/UI KIT developed using html, css, javascript and sass, ready to be implemen
  |  Charts | https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/adminCharts.html |
  |  Shopping Cart | https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/shopping.html |
  |  Dashboard | https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/adminDashboard.html |
+ |  Mail | https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/mail.html |
+ |  Product Detail | https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/productDetails.html |
  |  Register Product |...|
 </div>
 
