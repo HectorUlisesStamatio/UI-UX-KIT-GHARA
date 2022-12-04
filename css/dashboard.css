@@ -4,17 +4,17 @@
 :root {
 	--poppins: 'Poppins', sans-serif;
 
-	--light: #F9F9F9;
-	--blue: #6b9eeb;
-	--light-blue: #85b6ff76;
-	--grey: #eee;
-	--dark-grey: #AAAAAA;
-	--dark: #342E37;
-	--red: #f50057;
+	--light: hsl(0, 0%, 98%);
+	--blue: hsl(216, 76%, 67%);
+	--light-blue: hsla(216, 100%, 76%, 0.463);
+	--grey: hsl(0, 0%, 93%);
+	--dark-grey: hsl(0, 0%, 67%);
+	--dark: hsl(282, 10%, 20%);
+	--red: hsl(339, 100%, 48%);
 	--yellow: #5670d7;
-	--light-yellow: #8199f6b2;
-	--orange: #d0215e;
-	--light-orange: #f36b9bbd;
+	--light-yellow: hsla(228, 87%, 74%, 0.698);
+	--orange: hsl(339, 73%, 47%);
+	--light-orange: hsla(339, 85%, 69%, 0.741);
 }
 
 
@@ -79,6 +79,27 @@
 	font-weight: 500;
 }
 
+
+#dashboard___content main .btn-download {
+	height: 36px;
+	padding: 0 16px;
+	border-radius: 36px;
+	cursor: pointer;
+	background: var(--blue);
+	color: var(--light);
+	justify-content: center;
+	align-items: center;
+	grid-gap: 10px;
+	font-weight: 500;
+}
+
+
+
+#dashboard___content main .colorPicker {
+	margin-top: 50px;
+	margin-bottom: 10px;
+
+}
 
 
 

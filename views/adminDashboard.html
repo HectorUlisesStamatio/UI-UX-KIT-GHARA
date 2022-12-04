@@ -69,7 +69,8 @@
 					<span class="text">Descargar</span>
 				</a>
 			</div>
-
+			<input class="colorPicker" data-jscolor="value{value:'#CC66FF'}" , onInput="update(this.jscolor)" onchange="" />
+			<button style="border: none;" class="btn-download" onclick="window.location.reload();"><i class="ri-palette-fill"></i>	Estilo Base</button>
 			<ul class="box-info">
 				<li>
 					<i class='bx bxs-calendar-check'></i>
@@ -131,37 +132,38 @@
 					</table>
 				</div>
 				<div class="order">
-					<table style="height:300px;" id="line-example-11" class="charts-css line multiple hide-data show-labels show-primary-axis show-heading">
+					<table style="height:300px;" id="line-example-11"
+						class="charts-css line multiple hide-data show-labels show-primary-axis show-heading">
 						<caption> Incremento de visitas </caption>
 						<thead>
-						  <tr>
-							<th scope="col"> Año </th>
-							<th scope="col"> Progreso 1 </th>
-							<th scope="col"> Progreso 2 </th>
-							<th scope="col"> Progreso 3 </th>
-						  </tr>
+							<tr>
+								<th scope="col"> Año </th>
+								<th scope="col"> Progreso 1 </th>
+								<th scope="col"> Progreso 2 </th>
+								<th scope="col"> Progreso 3 </th>
+							</tr>
 						</thead>
 						<tbody>
-						  <tr>
-							<th scope="row"> 2000 </th>
-							<td style="--start:0.1; --size:0.5;"><span class="data"> 50 </span></td>
-							<td style="--start:0; --size:0.2;"><span class="data"> 20 </span></td>
-							<td style="--start:0.2; --size:0.4;"><span class="data"> 40 </span></td>
-						  </tr>
-						  <tr>
-							<th scope="row"> 2010 </th>
-							<td style="--start:0.5; --size:0.8;"><span class="data"> 80 </span></td>
-							<td style="--start:0.2; --size:0.5;"><span class="data"> 50 </span></td>
-							<td style="--start:0.4; --size:0.1;"><span class="data"> 10 </span></td>
-						  </tr>
-						  <tr>
-							<th scope="row"> 2020 </th>
-							<td style="--start:0.8; --size:0.4;"><span class="data"> 40 </span></td>
-							<td style="--start:0.5; --size:0.3;"><span class="data"> 30 </span></td>
-							<td style="--start:0.1; --size:0.2;"><span class="data"> 20 </span></td>
-						  </tr>
+							<tr>
+								<th scope="row"> 2000 </th>
+								<td style="--start:0.1; --size:0.5;"><span class="data"> 50 </span></td>
+								<td style="--start:0; --size:0.2;"><span class="data"> 20 </span></td>
+								<td style="--start:0.2; --size:0.4;"><span class="data"> 40 </span></td>
+							</tr>
+							<tr>
+								<th scope="row"> 2010 </th>
+								<td style="--start:0.5; --size:0.8;"><span class="data"> 80 </span></td>
+								<td style="--start:0.2; --size:0.5;"><span class="data"> 50 </span></td>
+								<td style="--start:0.4; --size:0.1;"><span class="data"> 10 </span></td>
+							</tr>
+							<tr>
+								<th scope="row"> 2020 </th>
+								<td style="--start:0.8; --size:0.4;"><span class="data"> 40 </span></td>
+								<td style="--start:0.5; --size:0.3;"><span class="data"> 30 </span></td>
+								<td style="--start:0.1; --size:0.2;"><span class="data"> 20 </span></td>
+							</tr>
 						</tbody>
-					  </table>
+					</table>
 				</div>
 
 			</div>
@@ -322,7 +324,11 @@
 	</section>
 	<!--=============== CONTENT ===============-->
 
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.5/jscolor.min.js"
+		integrity="sha512-YxdM5kmpjM5ap4Q437qwxlKzBgJApGNw+zmchVHSNs3LgSoLhQIIUNNrR5SmKIpoQ18mp4y+aDAo9m/zBQ408g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./../js/custom/brain.js"></script>
+	<script src="./../js/custom/brainConfig.js"></script>
 </body>
 
 </html>
