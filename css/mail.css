@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*=============== Main Content ===============*/
+
+.main-body {
+    display: flex;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*=============== Header ===============*/
+
+.header {
+    height: 70px;
+    min-width: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.header-left h2 {
+    object-fit: contain;
+    height: 40px;
+    margin-left: 10px;
+    color: #5670d7;
+}
+
+.header-left i {
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.header-mid {
+    display: flex;
+    flex: .7;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.header i {
+    color: gray;
+}
+
+.header-mid input {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: medium;
+    background-color: transparent;
+
+}
+
+.header-right {
+    padding-right: 20px;
+    display: flex;
+}
+
+.header-right i {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* side bar */
+.show-sidebar {
+    flex: 0.3;
+    max-width: 300px;
+    padding-right: 20px;
+}
+
+.sidebar-compose {
+    font-size:.938rem;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: white;
+    padding: 15px;
+    border-radius: 3rem;
+    background-color: #4d7abe;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 45%;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, .75);
+    font-weight: bold;
+}
+
+/*=============== Responsive ===============*/
+
+@media screen and (max-width: 920px) {
+    .sidebar-compose {
+        width: 100%;
+    }
+    .show-sidebar{
+        z-index: 1200;
+    }
+}
+
+.remove-sidebar{
+    flex: 0.3;
+    max-width: 300px;
+    padding-right: 20px;
+    display: none;
+}
+
+
+
+.sidebar-compose i {
+    margin-right: 5px;
+}
+
+.sidebar-menu,
+.sidebar-footer-icon {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0px 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    color: #818181;
+}
+
+.sidebar-menu i,
+.sidebar-footer-icon {
+    padding: 5px;
+}
+
+.sidebar-menu h3,
+.sidebar-footer-icon h3 {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sidebar-menu:hover,
+.sidebar-menu :hover h3,
+.sidebar-menu :hover i,
+.sidebar-active,
+.sidebar-active h3,
+.sidebar-active i {
+
+    background-color: #4d7abe;
+    color: #fff;
+    font-weight: 800;
+
+}
+
+.sidebar-footer-icon {
+
+    padding-left: 15px;
+}
+
+
+/*=============== Email List ===============*/
+
+.email-list {
+    flex: 1;
+    height: 50px;
+    width: 100%;
+
+}
+
+.emaillist-setting {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+    width: 100%;
+}
+
+.emaillist-settingLeft {
+    display: flex;
+    align-items: center;
+}
+
+.emaillist-setting i {
+    margin: 10px;
+    cursor: pointer;
+    color: #818181;
+}
+
+/*=============== Sections ===============*/
+
+.section,
+.section-selected {
+    display: flex;
+    align-items: center;
+    border-bottom-width: 2px;
+    padding: 25px;
+    min-width: 20%;
+    cursor: pointer;
+    color: gray;
+    border-width: 0;
+}
+
+.email-list-section {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+
+}
+
+.section-selected {
+    border-width: 3px;
+    color: #6b9eeb;
+    border-bottom: 3px solid #6b9eeb;
+}
+
+.section:hover,
+.section-selected:hover {
+    background-color: #f5f7ff;
+    border-width: 3px;
+}
+
+.section,
+.section-selected h4 {
+    font-size: 14px;
+    margin-left: 15px;
+
+}
+
+.emailRow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.emailRow-opt i,
+input {
+
+    margin: 5px;
+
+}
+
+.emailRow {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.emailRow:hover {
+    border-top: 1px solid whitesmoke;
+    background-color: #4d7abe3c;
+    box-shadow: 0 4px -2px rgba(0, 0, 0, .24);
+}
+
+.emailRow-msg {
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+    font-size: 15px;
+}
+
+.emailRow-msg h4 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.emailRow-title {
+    font-size: 15px;
+    flex: .3;
+}
+
+.emailRow-time {
+    padding-right: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.emailRow-desc {
+    font-weight: 400;
+    font-size: 15px;
+    color: gray;
+}
+
+/*=============== Footer Wave ===============*/
+
+.ft{
+    width: 100%;
+    z-index: -100;
+    position: fixed;
+    bottom: -60px;
+}
+
+@media screen and (max-width: 650px) {
+    .ft{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 865px) {
+    .ft{
+        display: none;
+    }
+}
