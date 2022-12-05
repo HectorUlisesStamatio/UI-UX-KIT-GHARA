@@ -255,8 +255,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: column;
-    padding-bottom: 60px;   
+    flex-flow: column; 
 }
 
 .checkout___container form {
