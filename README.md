@@ -73,8 +73,7 @@ A UX/UI KIT developed using html, css, javascript and sass, ready to be implemen
  -  Shopping Cart
  -  Payment Views
  -  Wizzard
- -  Chekout
- -  Validations
+ -  Checkout
  -  Dashboard
  -  Datatables
  -  Register Product
