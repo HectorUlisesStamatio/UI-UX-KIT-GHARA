@@ -52,7 +52,7 @@ A UX/UI KIT developed using html, css, javascript and sass, ready to be implemen
  |  Dashboard | https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/adminDashboard.html |
  |  Mail | https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/mail.html |
  |  Product Detail | https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/productDetails.html |
- |  Register Product |...|
+ |  Register Product |https://hectorulisesstamatio.github.io/UI-UX-KIT-GHARA/views/productList.html|
 </div>
 
 ## 🧰Features
@@ -73,8 +73,7 @@ A UX/UI KIT developed using html, css, javascript and sass, ready to be implemen
  -  Shopping Cart
  -  Payment Views
  -  Wizzard
- -  Chekout
- -  Validations
+ -  Checkout
  -  Dashboard
  -  Datatables
  -  Register Product
