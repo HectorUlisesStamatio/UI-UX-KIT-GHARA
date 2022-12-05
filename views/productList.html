@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!--=============== META ===============-->
+  <meta name="theme-color" content="#4285f4">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="./../img/favicon.png" type="image/x-icon">
+
+  <!--=============== BOXICONS ===============-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="./../css/swiper-bundle.min.css">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./../css/styles.css">
+  <link rel="stylesheet" href="./../css/resources.css">
+
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!--=============== FONTAWESOME ===============-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>GHARA | Principal</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header" style="background:hsl(218.08,81%,59%);">
+    <nav class="nav container">
+      <a href="#" class="nav__logo" style="color: white;">
+        GHARA
+      </a>
+
+      <div class="nav__menu" style="background:hsl(218.08,81%,59%);">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link" style="color: white;">
+              <i class='bx bx-home-alt-2'></i>
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link" style="color: white;">
+              <i class='bx bx-building-house'></i>
+              <span>Inmuebles</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link" style="color: white;">
+              <i class='bx bx-award'></i>
+              <span>Valor agregado</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link" style="color: white;">
+              <span>Precios</span>
+              <i class='bx bx-dollar'></i>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="" class="nav__link" style="color: white;">
+              <span>Contáctanos</span>
+              <i class='bx bx-phone'></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Theme change button -->
+      <i class="ri-user-3-line change-theme" style="color: white;" onclick=" profile()"></i>
+      <a href="./views/login.html" class="nav__button button">Iniciar sesión</a>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+
+    <div id="profile__container" class="form__container ">
+      <div class="form__add__card">
+        <h2>Agregar Casa</h2>
+        <div class="input-field">
+            <i class="fas fa-home"></i>
+            <input type="text" placeholder="Nombre Casa" />
+        </div>
+        <div class="input-field">
+            <i class="fas fa-info-circle"></i>
+            <input type="text" placeholder="Descripción" />
+        </div>
+        <div class="input-field">
+            <i class="fas fa-route"></i>
+            <input type="text" placeholder="Dirección" />
+        </div>
+        <div class="input-field">
+            <i class="fas fa-bed"></i>
+            <input type="number" placeholder="Cuartos" />
+        </div>
+        <div class="input-field">
+            <i class="fas fa-toilet"></i>
+            <input type="number" placeholder="Baños" />
+        </div>
+        <div class="input-field">
+            <i class="fas fa-car"></i>
+            <input type="number" placeholder="Espacios para coche" />
+        </div>
+        
+        <button class="button-success" onclick="profile()">Guardar</button>
+        <button class="button-danger" onclick="profile()">Cancelar</button>
+      </div>
+    
+    </div>
+   
+
+
+   
+
+
+
+    <!--==================== POPULAR ====================-->
+    <section class="section" id="popular">
+
+      <div class="container">
+
+        <span class="section__subtitle">La mejor elección</span>
+        <h2 class="section__title">
+          Propiedades Populares<span>.</span>
+        </h2>
+
+        <div class="popular__container grid swiper">
+          <div class="swiper-wrapper">
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular1.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>69,999
+                </h2>
+                <h3 class="popular__title">
+                  Casa de lujo Santa Fe
+                </h3>
+                <p class="popular__description">
+                  Av. Vasco de Quiroga 3800, Santa Fe, Alvaro Obregón, Ciudad de México . #9876
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular2.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>200,000
+                </h2>
+                <h3 class="popular__title">
+                  Departamento en Citta San Jeronimo
+                </h3>
+                <p class="popular__description">
+                  Avenida de las torres 900 , San José del Olivar, Alvaro Obregón #9876
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular3.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>77,000
+                </h2>
+                <h3 class="popular__title">
+                  Vidalta Parque Residencial
+                </h3>
+                <p class="popular__description">
+                  Av. Stim 28 Bosques de las Lomas, Cuajimalpa de Morelos #9876
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular4.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>65,000
+                </h2>
+                <h3 class="popular__title">
+                  Departamento #12 Col. Condesa, Cdmx
+                </h3>
+                <p class="popular__description">
+                  C. Chilpancingo 57 Hipódromo Condesa, Cuauhtémoc #9876
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular5.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>120,000
+                </h2>
+                <h3 class="popular__title">
+                  Fresnos. - Gabriel Mancera 29
+                </h3>
+                <p class="popular__description">
+                  Gabriel Mancera 29, Del Valle Centro, Benito Juárez, Ciudad de México. #9876
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class='bx bx-chevron-right'></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class='bx bx-chevron-left'></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== AROUND ====================-->
+    <section class="section" id="popular">
+      <div class="container">
+        <span class="section__subtitle">Dentro de tu zona</span>
+        <h2 class="section__title">
+          Propiedades cerca de ti<span>.</span>
+        </h2>
+
+        <div class="popular__container grid swiper">
+          <div class="swiper-wrapper">
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular1.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>69,999
+                </h2>
+                <h3 class="popular__title">
+                  Casa de lujo Santa Fe
+                </h3>
+                <p class="popular__description">
+                  Av. Vasco de Quiroga 3800, Santa Fe, Alvaro Obregón, Ciudad de México . #9876
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular2.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>200,000
+                </h2>
+                <h3 class="popular__title">
+                  Departamento en Citta San Jeronimo
+                </h3>
+                <p class="popular__description">
+                  Avenida de las torres 900 , San José del Olivar, Alvaro Obregón #9876
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular3.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>77,000
+                </h2>
+                <h3 class="popular__title">
+                  Vidalta Parque Residencial
+                </h3>
+                <p class="popular__description">
+                  Av. Stim 28 Bosques de las Lomas, Cuajimalpa de Morelos #9876
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular4.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>65,000
+                </h2>
+                <h3 class="popular__title">
+                  Departamento #12 Col. Condesa, Cdmx
+                </h3>
+                <p class="popular__description">
+                  C. Chilpancingo 57 Hipódromo Condesa, Cuauhtémoc #9876
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular5.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>120,000
+                </h2>
+                <h3 class="popular__title">
+                  Fresnos. - Gabriel Mancera 29
+                </h3>
+                <p class="popular__description">
+                  Gabriel Mancera 29, Del Valle Centro, Benito Juárez, Ciudad de México. #9876
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class='bx bx-chevron-right'></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class='bx bx-chevron-left'></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--==================== CHEAP ====================-->
+    <section class="section" id="popular">
+      <div class="container">
+        <span class="section__subtitle">El mejor precio del mercado</span>
+        <h2 class="section__title">
+          Propiedades Accesibles<span>.</span>
+        </h2>
+
+        <div class="popular__container grid swiper">
+          <div class="swiper-wrapper">
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular1.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>69,999
+                </h2>
+                <h3 class="popular__title">
+                  Casa de lujo Santa Fe
+                </h3>
+                <p class="popular__description">
+                  Av. Vasco de Quiroga 3800, Santa Fe, Alvaro Obregón, Ciudad de México . #9876
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular2.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>200,000
+                </h2>
+                <h3 class="popular__title">
+                  Departamento en Citta San Jeronimo
+                </h3>
+                <p class="popular__description">
+                  Avenida de las torres 900 , San José del Olivar, Alvaro Obregón #9876
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular3.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>77,000
+                </h2>
+                <h3 class="popular__title">
+                  Vidalta Parque Residencial
+                </h3>
+                <p class="popular__description">
+                  Av. Stim 28 Bosques de las Lomas, Cuajimalpa de Morelos #9876
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular4.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>65,000
+                </h2>
+                <h3 class="popular__title">
+                  Departamento #12 Col. Condesa, Cdmx
+                </h3>
+                <p class="popular__description">
+                  C. Chilpancingo 57 Hipódromo Condesa, Cuauhtémoc #9876
+                </p>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <img src="./../img/popular5.jpg" alt="" class="popular__img">
+
+              <div class="popular__data">
+                <h2 class="popular__price">
+                  <span>$</span>120,000
+                </h2>
+                <h3 class="popular__title">
+                  Fresnos. - Gabriel Mancera 29
+                </h3>
+                <p class="popular__description">
+                  Gabriel Mancera 29, Del Valle Centro, Benito Juárez, Ciudad de México. #9876
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class='bx bx-chevron-right'></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class='bx bx-chevron-left'></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a href="#" onclick="profile()" class="float" title="Agregar una casa">
+      <i class="fa fa-plus my-float"></i>
+    </a>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer section">
+    <div class="footer__container container grid">
+      <div>
+        <a href="" class="footer__logo">
+          GHARA
+        </a>
+        <p class="footer__description">
+          Los mejores profesionales a tu servicio. <br>
+          Tu casa en buenas manos.
+        </p>
+      </div>
+
+      <div class="footer__content">
+        <div>
+          <h3 class="footer__title">
+            Nosotros
+          </h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Sobre nosotros</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Características</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Noticias</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">
+            Empresa
+          </h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">¿Cómo trabajamos?</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Capital</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Seguridad</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">
+            Soporte
+          </h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Preguntas Frecuentes</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Centro de soporte</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">
+            Síguenos
+          </h3>
+
+          <ul class="footer__social">
+            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+              <i class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+              <i class='bx bxl-instagram-alt'></i>
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank" class="footer__social-link">
+              <i class='bx bxl-pinterest'></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__info container">
+      <span class="footer__copy">
+        &#169; GHARA. Todos los derechos reservados.
+      </span>
+
+      <div class="footer__privacy">
+        <a href="#">Terminos & Condiciones</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="./../js/scrollreveal.min.js"></script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="./../js/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="./../js/main.js"></script>
+
+  <!--=============== ANIMATION JS ===============-->
+  <script src="./../js/animation.js"></script>
+</body>
+
+</html>

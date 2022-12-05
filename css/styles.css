@@ -221,6 +221,9 @@ button {
   .nav__link span {
     display: none;
   }
+  .float{
+    display: none;
+  }
 }
 
 /* Change background header */
@@ -1269,7 +1272,6 @@ button {
 .profile__container {
   z-index: 110;
   height: 100vh;
-  
   display: flex;
   place-items: center;
   top: 0;
@@ -1445,3 +1447,59 @@ button {
   }
 }
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#4285f4;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  z-index: 300;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+.form__container {
+  z-index: 110;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+  width: 450px;
+  max-width: 100%;
+  background: #fff;
+  margin: 50px auto 0;
+  padding: 50px;
+  border-radius: 55px;
+  border: 1px solid rgba(27, 42, 129, 0.445);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+  place-items: center;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+.form__container .form__add__card button {
+  width: 60%;
+  margin-bottom: 10px;
+  margin-left: 70px;
+}
+
+.show-modal{
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-height:840px){
+  .form__container{
+    height: 100%;
+  }
+}

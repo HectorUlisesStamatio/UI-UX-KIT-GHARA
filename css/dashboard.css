@@ -98,7 +98,11 @@
 #dashboard___content main .colorPicker {
 	margin-top: 50px;
 	margin-bottom: 10px;
-
+	border-radius: 3rem;
+	height: 36px;
+	cursor: pointer;
+	border: 1px solid ;
+	border-color: var(--dark-grey);
 }
 
 
